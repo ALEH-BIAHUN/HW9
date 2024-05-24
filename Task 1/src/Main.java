@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     static double a = 0;
     static double b = 0;
 
     public static void main(String[] args) {
-        //todo Вам нужно дополнить методы так, чтобы получился рабочий калькулятор
+
         a = inputDouble();
         b = inputDouble();
 
@@ -14,23 +16,27 @@ public class Main {
     }
 
     private static void divide() {
-        //todo дописать логику и печать результата
+        double divide = a / b;
+        System.out.println("The divide of the numbers is: " + divide);
     }
 
     private static void diff() {
-        //todo дописать логику и печать результата
+        double diff = a - b;
+        System.out.println("The subtraction of the numbers is: " + diff);
     }
 
     private static void multiply() {
-        //todo дописать логику и печать результата
+        double multiply = a * b;
+        System.out.println("The multiply of the numbers is: " + multiply);
     }
 
     private static void sum() {
-        //todo дописать логику и печать результата
+        double sum = a + b;
+        System.out.println("The sum of the numbers is: " + sum);
     }
 
     private static double inputDouble() {
-        //todo дописать логику
-        return 0;
+        System.out.println("Enter number: ");
+        return new Scanner(System.in).nextDouble();
     }
 }
